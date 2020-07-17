@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Chats">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estas en la seccion de chats"
+        android:textAlignment="center"
+        android:textSize="20sp"></TextView>
+    <TextView
+        android:id="@+id/txtNombreU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del usuario"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"></TextView>
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CERRAR SESIÓN"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        ></Button>
+</LinearLayout>

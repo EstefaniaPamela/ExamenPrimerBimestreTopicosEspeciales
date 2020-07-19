@@ -4,32 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#202C4C"
+    android:backgroundTint="#FFFFFF"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".Chats">
-    
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Estas en la seccion de chats"
-        android:textAlignment="center"
-        android:textSize="20sp"></TextView>
+
     <TextView
         android:id="@+id/txtNombreU"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre del usuario"
         android:layout_margin="10dp"
+        android:text="Nombre del usuario"
         android:textAlignment="center"
         android:textSize="20sp"></TextView>
 
-    <Button
-        android:id="@+id/btn_salir"
-        android:layout_width="match_parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMensaje"
+        android:layout_width="340dp"
+        android:layout_height="347dp"
+        android:background="#8CB5B6" />
+
+    <LinearLayout
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:text="CERRAR SESIÓN"
-        android:layout_margin="20dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        ></Button>
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnEnviar"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8CB5B6"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_salir"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:text="CERRAR SESIÓN"
+            android:textColor="@android:color/white"></Button>
+    </LinearLayout>
+
 </LinearLayout>
